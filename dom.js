@@ -30,7 +30,8 @@
       span.style.margin = "20px";
       todoNode.appendChild(span);
 
-
+      // if the description is marked..change the color to red..if not keep it black
+      span.style.color = todo.done && "red" || "black";
 
 
 
@@ -52,11 +53,12 @@
     });
     todoNode.appendChild(deleteButtonNode);
 
-    // add markTodo button
 
+      /*********************** add markTodo button *********************************/
     var markTodo = document.createElement('button');
+    markTodo.textContent = todo.done && "Unmark" || "Mark";
       // Styling the mark button
-      markTodo.textContent = "Mark";
+      // markTodo.textContent = "Mark";
       markTodo.style.backgroundColor = "#FFD700";
       markTodo.style.boxShadow = " 5px 5px 3px #888888";
       markTodo.style.padding = "5px";
@@ -65,11 +67,7 @@
 
     markTodo.addEventListener('click', function(event){
       var newMark = todoFunctions.markTodo(state, todo.id);
-      if (span.style.color == "black") {
-              span.style.color = "red";
-          } else {
-              span.style.color = "black";
-          }
+      console.log(newMark);
       update(newMark);
     });
     todoNode.appendChild(markTodo);
@@ -81,6 +79,7 @@
 
 
 
+
   // bind create todo form
   if (addTodoForm) {
     addTodoForm.addEventListener('submit', function(event) {
@@ -89,10 +88,9 @@
       // what is inside event.target?
       event.preventDefault();
       var description = document.getElementById("add-todo")[0].value; // event.target ....
-      var obj = {"description":description,"done":false};
 
       // hint: todoFunctions.addTodo
-      var newState = todoFunctions.addTodo(state, obj); // ?? change this!
+      var newState = todoFunctions.addTodo(state, description); // ?? change this!
       update(newState);
     });
   }
