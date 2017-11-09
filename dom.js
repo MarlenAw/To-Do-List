@@ -12,7 +12,7 @@
   var createTodoNode = function(todo) {
     var todoNode = document.createElement('li');
     //style for list
-    todoNode.style.backgroundColor ="#FFE4B5";
+    todoNode.style.backgroundColor = "#FFE4B5";
     todoNode.style.fontSize = "20px";
     todoNode.style.width = "auto";
     todoNode.style.borderRadius = "5px";
@@ -23,15 +23,16 @@
 
     // add span holding description
 
-      var span = document.createElement("span");
-      // span.textContent = todo.id + ". " + todo.description;
-      span.textContent = todo.description; //to only show the description once its been submited..no need for the id
-      //style the description
-      span.style.margin = "20px";
-      todoNode.appendChild(span);
+    var span = document.createElement("span");
+    // span.textContent = todo.id + ". " + todo.description;
+    span.textContent = todo.description; //to only show the description once its been submited..no need for the id
+    //style the description
+    span.style.margin = "20px";
+    todoNode.appendChild(span);
 
-      // if the description is marked..change the color to red..if not keep it black
-      span.style.color = todo.done && "red" || "black";
+    // if the description is marked..change the color to red..if not keep it black
+    span.style.color = todo.done && "red" || "black";
+    span.style.textDecoration = todo.done && "line-through" || "none";
 
 
 
@@ -54,18 +55,19 @@
     todoNode.appendChild(deleteButtonNode);
 
 
-      /*********************** add markTodo button *********************************/
+    /*********************** add markTodo button *********************************/
     var markTodo = document.createElement('button');
     markTodo.textContent = todo.done && "Unmark" || "Mark";
-      // Styling the mark button
-      // markTodo.textContent = "Mark";
-      markTodo.style.backgroundColor = "#FFD700";
-      markTodo.style.boxShadow = " 5px 5px 3px #888888";
-      markTodo.style.padding = "5px";
-      markTodo.style.borderRadius = "5px";
-      markTodo.style.borderColor = "black";
+    markTodo.style.backgroundColor = todo.done && "#FFD700" || "green";
+    // Styling the mark button
+    // markTodo.textContent = "Mark";
+    // markTodo.style.backgroundColor = "#FFD700";
+    markTodo.style.boxShadow = " 5px 5px 3px #888888";
+    markTodo.style.padding = "5px";
+    markTodo.style.borderRadius = "5px";
+    markTodo.style.borderColor = "black";
 
-    markTodo.addEventListener('click', function(event){
+    markTodo.addEventListener('click', function(event) {
       var newMark = todoFunctions.markTodo(state, todo.id);
       console.log(newMark);
       update(newMark);
