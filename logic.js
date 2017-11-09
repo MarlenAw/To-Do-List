@@ -33,8 +33,8 @@ var todoFunctions = {
     var newList = {}; //creating a new object
 
     newList.id = todoFunctions.generateId();
-    newList.description = newTodo.description;
-    newList.done = newTodo.done;
+    newList.description = newTodo;
+    newList.done = false;
 
     return newTodoList.concat(newList);
   },

@@ -19,29 +19,15 @@ var newTask = [{
 
 // var addTodo = logic.addTodo;
 
-test('Example test', function(t) {
+test('Add test', function(t) {
   var actual = [{'id':1, 'description': 'hello', 'done': false}];
-  var expected = todoFunctions.addTodo([], newTask[0]);
+  var expected = todoFunctions.addTodo([], 'hello');
   //t.pass();
   t.deepEqual(actual, expected, 'this test should pass');
   t.end();
 });
 
-test('Example test', function(t) {
-  var actual = [{'id':2, 'description': 'bye', 'done': false}];
-  var expected = todoFunctions.addTodo([], newTask[1]);
-  //t.pass();
-  t.deepEqual(actual, expected, 'this test should pass');
-  t.end();
-});
 
-test('Example test', function(t) {
-  var actual = [{'id':3, 'description': 'later', 'done': true}];
-  var expected = todoFunctions.addTodo([], newTask[2]);
-  //t.pass();
-  t.deepEqual(actual, expected, 'this test should pass');
-  t.end();
-});
 
 
 
