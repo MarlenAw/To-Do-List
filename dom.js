@@ -93,6 +93,7 @@
 
       // hint: todoFunctions.addTodo
       var newState = todoFunctions.addTodo(state, description); // ?? change this!
+      document.getElementById("add-todo")[0].value = "";
       update(newState);
     });
   }
