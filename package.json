@@ -1,0 +1,12 @@
+{
+  "name": "todo",
+  "version": "",
+  "devDependencies": {
+    "nyc": "^11.3.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0"
+  },
+  "scripts": {
+    "test": "nyc node test.js | tap-spec"
+  }
+}
