@@ -21,4 +21,4 @@
 
   ### This [App](https://marlenaw.github.io/To-Do-List/) is on 
                                                              
-                                                              ![alt text](http://pngimg.com/uploads/extinguisher/extinguisher_PNG54.png)
+   ![alt text](http://pngimg.com/uploads/extinguisher/extinguisher_PNG54.png)
