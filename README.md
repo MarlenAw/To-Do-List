@@ -18,6 +18,5 @@
   * view the tasks I have added in a list so that I can plan my day
   * mark tasks as complete so that I can focus on the tasks I have left
 
-### A closer look to my App
 
-  This [App](https://marlenaw.github.io/To-Do-List/) is on ![alt text](http://pngimg.com/uploads/extinguisher/extinguisher_PNG54.png)
+  ### This [App](https://marlenaw.github.io/To-Do-List/) is on ![alt text](http://pngimg.com/uploads/extinguisher/extinguisher_PNG54.png)
