@@ -20,4 +20,4 @@
 
 ### A closer look to my App
 
-  [To-Do App](https://marlenaw.github.io/To-Do-List/)
+  This [App](https://marlenaw.github.io/To-Do-List/) is on ![alt text](http://pngimg.com/uploads/extinguisher/extinguisher_PNG54.png)
