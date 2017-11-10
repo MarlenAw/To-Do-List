@@ -19,4 +19,6 @@
   * mark tasks as complete so that I can focus on the tasks I have left
 
 
-  ### This [App](https://marlenaw.github.io/To-Do-List/) is on ![alt text](http://pngimg.com/uploads/extinguisher/extinguisher_PNG54.png)
+  ### This [App](https://marlenaw.github.io/To-Do-List/) is on 
+                                                             
+                                                              ![alt text](http://pngimg.com/uploads/extinguisher/extinguisher_PNG54.png)
