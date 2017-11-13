@@ -1,0 +1,38 @@
+body{
+  background-color: #708090;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+h1{
+  font-family: 'Spectral SC', serif;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.toDoForm{
+    margin-top: 5%;
+}
+
+input[type=text] {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    height: 50px;
+    background-color: #FFEFD5;
+}
+
+input[type=submit] {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  height: 50px;
+  background-color: #FFEFD5;
+  color: red;
+  font-size: 15px;
+  font-family: 'Spectral SC', serif;
+}
+
+input[type=submit]:hover {
+  background-color: #FFD700;
+}
