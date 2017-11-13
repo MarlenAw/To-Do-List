@@ -14,8 +14,10 @@
     //style for list
     todoNode.style.backgroundColor = "#FFE4B5";
     todoNode.style.fontSize = "20px";
-    todoNode.style.width = "auto";
-    todoNode.style.borderRadius = "5px";
+    todoNode.style.width = "90%";
+    todoNode.style.alignText = "center";
+    todoNode.style.margin = "0 auto";
+
 
 
 
